@@ -1,0 +1,123 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "11",
+    "title": "spectest",
+    "x-lastModified": "Apr 20, 2017 14:45PM PST"
+  },
+  "paths": {
+    "/pet": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response",
+            "schema": {
+              "$ref": "#/definitions/GiveNewSchemaNameHere"
+            },
+            "examples": {
+              "application/json": {
+                "oprea": "result123"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/GiveNewSchemaNameHere"
+            }
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ]
+      },
+      "patch": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response",
+            "schema": {
+              "$ref": "#/definitions/GiveNewSchemaNameHere"
+            },
+            "examples": {
+              "application/json": {
+                "result": "1",
+                "result2": "2"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "description": "patch description",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/GiveNewSchemaNameHere"
+              }
+            }
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ]
+      },
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response",
+            "schema": {
+              "$ref": "#/definitions/GiveNewSchemaNameHere"
+            },
+            "examples": {
+              "application/json": {
+                "id": 0,
+                "category": {
+                  "id": 0,
+                  "name": "string"
+                },
+                "name": "doggie",
+                "photoUrls": [
+                  "string"
+                ],
+                "tags": [
+                  {
+                    "id": 0,
+                    "name": "string"
+                  }
+                ],
+                "status": "available"
+              }
+            }
+          }
+        },
+        "parameters": []
+      }
+    }
+  },
+  "definitions": {
+    "GiveNewSchemaNameHere": {
+      "type": "object",
+      "properties": {
+        "oprea": {
+          "type": "string",
+          "default": "result123"
+        }
+      }
+    }
+  }
+}
