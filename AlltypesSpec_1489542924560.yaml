@@ -1,66 +1,25 @@
 {
   "swagger": "2.0",
   "info": {
-    "version": "1",
-    "title": "spec1",
-    "x-lastModified": "May 10, 2017 15:37PM PST"
+    "version": "12",
+    "title": "spec001",
+    "x-lastModified": "May 11, 2017 19:29PM PST",
+    "description": "des"
   },
   "paths": {
-    "/test/{testId}": {
-      "get": {
+    "/test111/{test111}": {
+      "patch": {
         "produces": [
           "application/json"
         ],
         "responses": {
           "200": {
-            "description": "Success response",
-            "schema": {
-              "$ref": "#/definitions/GiveNewSchemaNameHere"
-            },
-            "examples": {
-              "application/json": {
-                "test": "testresult"
-              }
-            }
+            "description": "Success response"
           }
         },
         "parameters": [
           {
-            "name": "testId",
-            "in": "path",
-            "description": "",
-            "required": true,
-            "type": "string",
-            "format": ""
-          }
-        ]
-      },
-      "post": {
-        "produces": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "Success response",
-            "schema": {
-              "$ref": "#/definitions/GiveNewSchemaNameHere"
-            },
-            "examples": {
-              "application/json": {
-                "type": "object",
-                "properties": {
-                  "test": {
-                    "type": "string",
-                    "default": "testresult"
-                  }
-                }
-              }
-            }
-          }
-        },
-        "parameters": [
-          {
-            "name": "testId",
+            "name": "test111",
             "in": "path",
             "description": "",
             "required": true,
@@ -80,7 +39,7 @@
         },
         "parameters": [
           {
-            "name": "testId",
+            "name": "test111",
             "in": "path",
             "description": "",
             "required": true,
@@ -89,32 +48,38 @@
           }
         ]
       },
-      "patch": {
+      "get": {
         "produces": [
           "application/json"
         ],
         "responses": {
           "200": {
-            "description": "Success response",
-            "schema": {
-              "$ref": "#/definitions/GiveNewSchemaNameHere"
-            },
-            "examples": {
-              "application/json": {
-                "type": "object",
-                "properties": {
-                  "test": {
-                    "type": "string",
-                    "default": "testresult"
-                  }
-                }
-              }
-            }
+            "description": "Success response"
           }
         },
         "parameters": [
           {
-            "name": "testId",
+            "name": "test111",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string",
+            "format": ""
+          }
+        ]
+      },
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response"
+          }
+        },
+        "parameters": [
+          {
+            "name": "test111",
             "in": "path",
             "description": "",
             "required": true,
@@ -134,43 +99,40 @@
         },
         "parameters": [
           {
+            "name": "test111",
             "in": "path",
             "description": "",
             "required": true,
             "type": "string",
-            "format": "",
-            "name": "testId"
+            "format": ""
+          }
+        ],
+        "tags": [
+          "test"
+        ],
+        "description": "test111"
+      }
+    },
+    "/test111/{11}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response"
+          }
+        },
+        "parameters": [
+          {
+            "name": "11",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string",
+            "format": ""
           }
         ]
-      }
-    }
-  },
-  "definitions": {
-    "GiveNewSchemaNameHere": {
-      "type": "object",
-      "properties": {
-        "type": {
-          "type": "string",
-          "default": "object"
-        },
-        "properties": {
-          "type": "object",
-          "properties": {
-            "test": {
-              "type": "object",
-              "properties": {
-                "type": {
-                  "type": "string",
-                  "default": "string"
-                },
-                "default": {
-                  "type": "string",
-                  "default": "testresult"
-                }
-              }
-            }
-          }
-        }
       }
     }
   }
