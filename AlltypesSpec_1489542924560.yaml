@@ -1,53 +1,82 @@
 {
-  "definitions": {
-    "HelloMsg": {
-      "properties": {
-        "Hello": {
-          "default": "Nikhil",
-          "type": "string"
-        }
-      },
-      "type": "object"
-    }
-  },
+  "swagger": "2.0",
   "info": {
-    "description": "This is APISpec is created before 190 release which has no patch method",
-    "title": "Pre180APISpecWithoutPatch",
-    "version": "1.2.3",
-    "x-lastModified": "May 01, 2017 23:13PM PST"
+    "version": "1",
+    "title": "try002-123",
+    "x-lastModified": "Jun 02, 2017 06:39AM PST"
   },
   "paths": {
-    "/comp/{name}": {
+    "/mmm": {
       "get": {
-        "description": "Computer Store",
-        "parameters": [
-          {
-            "name": "name",
-            "in": "path",
-            "description": "",
-            "required": true,
-            "type": "string",
-            "format": ""
-          }
+        "produces": [
+          "application/json"
         ],
+        "responses": {
+          "200": {
+            "description": "Success response"
+          }
+        },
+        "parameters": []
+      },
+      "post": {
         "produces": [
           "application/json"
         ],
         "responses": {
           "200": {
             "description": "Success response",
-            "examples": {
-              "application/json": {
-                "Hello": "Nikhil"
+            "headers": {
+              "qqq": {
+                "description": "",
+                "type": "string"
               }
-            },
-            "schema": {
-              "$ref": "#/definitions/HelloMsg"
             }
           }
-        }
+        },
+        "parameters": [
+          {
+            "name": "qqq",
+            "in": "query",
+            "description": "",
+            "required": false,
+            "type": "string",
+            "format": ""
+          }
+        ]
+      },
+      "put": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response"
+          }
+        },
+        "parameters": []
+      },
+      "patch": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response"
+          }
+        },
+        "parameters": []
+      },
+      "delete": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response"
+          }
+        },
+        "parameters": []
       }
     }
-  },
-  "swagger": "2.0"
+  }
 }
