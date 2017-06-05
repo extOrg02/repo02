@@ -2,11 +2,11 @@
   "swagger": "2.0",
   "info": {
     "version": "1",
-    "title": "try002-123",
-    "x-lastModified": "Jun 02, 2017 06:39AM PST"
+    "title": "spec001",
+    "x-lastModified": "Jun 04, 2017 18:19PM PST"
   },
   "paths": {
-    "/mmm": {
+    "/pet": {
       "get": {
         "produces": [
           "application/json"
@@ -14,29 +14,39 @@
         "responses": {
           "200": {
             "description": "Success response"
-          }
-        },
-        "parameters": []
-      },
-      "post": {
-        "produces": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "Success response",
-            "headers": {
-              "qqq": {
-                "description": "",
-                "type": "string"
+          },
+          "qerqewr": {
+            "description": "zcvv",
+            "schema": {
+              "$ref": "#/definitions/GiveNewSchemaNameHere"
+            },
+            "examples": {
+              "application/json": {
+                "asdfasdf": "ewqrrewr"
               }
             }
           }
         },
         "parameters": [
           {
-            "name": "qqq",
+            "name": "affasdf",
             "in": "query",
+            "description": "",
+            "required": false,
+            "type": "string",
+            "format": ""
+          },
+          {
+            "name": "aqerqer",
+            "in": "query",
+            "description": "",
+            "required": false,
+            "type": "string",
+            "format": ""
+          },
+          {
+            "name": "cvzxvcx",
+            "in": "header",
             "description": "",
             "required": false,
             "type": "string",
@@ -44,7 +54,7 @@
           }
         ]
       },
-      "put": {
+      "patch": {
         "produces": [
           "application/json"
         ],
@@ -55,7 +65,7 @@
         },
         "parameters": []
       },
-      "patch": {
+      "put": {
         "produces": [
           "application/json"
         ],
@@ -76,6 +86,48 @@
           }
         },
         "parameters": []
+      },
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response",
+            "schema": {
+              "$ref": "#/definitions/GiveNewSchemaNameHere"
+            },
+            "examples": {
+              "application/json": {
+                "dd": "hh"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "description": "assdfdsf",
+            "schema": {
+              "$ref": "#/definitions/GiveNewSchemaNameHere"
+            }
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "GiveNewSchemaNameHere": {
+      "type": "object",
+      "properties": {
+        "dd": {
+          "type": "string",
+          "default": "hh"
+        }
       }
     }
   }
