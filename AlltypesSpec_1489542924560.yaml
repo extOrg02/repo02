@@ -2,8 +2,8 @@
   "swagger": "2.0",
   "info": {
     "version": "1",
-    "title": "spec001",
-    "x-lastModified": "Jun 04, 2017 18:19PM PST"
+    "title": "spec2",
+    "x-lastModified": "Jul 24, 2017 15:05PM PST"
   },
   "paths": {
     "/pet": {
@@ -13,79 +13,48 @@
         ],
         "responses": {
           "200": {
-            "description": "Success response"
-          },
-          "qerqewr": {
-            "description": "zcvv",
-            "schema": {
-              "$ref": "#/definitions/GiveNewSchemaNameHere"
-            },
-            "examples": {
-              "application/json": {
-                "asdfasdf": "ewqrrewr"
+            "description": "Success response",
+            "headers": {
+              "header22": {
+                "description": "afdsafds",
+                "type": "string",
+                "default": "dsfdsf"
               }
             }
           }
         },
         "parameters": [
           {
-            "name": "affasdf",
+            "name": "query",
             "in": "query",
             "description": "",
-            "required": false,
+            "required": true,
             "type": "string",
             "format": ""
           },
           {
-            "name": "aqerqer",
+            "name": "q2",
             "in": "query",
             "description": "",
             "required": false,
             "type": "string",
-            "format": ""
+            "format": "date-time"
           },
           {
-            "name": "cvzxvcx",
+            "name": "heaer1",
             "in": "header",
             "description": "",
-            "required": false,
+            "required": true,
             "type": "string",
             "format": ""
           }
+        ],
+        "operationId": "getPet",
+        "description": "sd",
+        "summary": "w",
+        "tags": [
+          "tag2"
         ]
-      },
-      "patch": {
-        "produces": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "Success response"
-          }
-        },
-        "parameters": []
-      },
-      "put": {
-        "produces": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "Success response"
-          }
-        },
-        "parameters": []
-      },
-      "delete": {
-        "produces": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "Success response"
-          }
-        },
-        "parameters": []
       },
       "post": {
         "produces": [
@@ -93,41 +62,11 @@
         ],
         "responses": {
           "200": {
-            "description": "Success response",
-            "schema": {
-              "$ref": "#/definitions/GiveNewSchemaNameHere"
-            },
-            "examples": {
-              "application/json": {
-                "dd": "hh"
-              }
-            }
+            "description": "Success response"
           }
         },
-        "parameters": [
-          {
-            "name": "body",
-            "in": "body",
-            "description": "assdfdsf",
-            "schema": {
-              "$ref": "#/definitions/GiveNewSchemaNameHere"
-            }
-          }
-        ],
-        "consumes": [
-          "application/json"
-        ]
-      }
-    }
-  },
-  "definitions": {
-    "GiveNewSchemaNameHere": {
-      "type": "object",
-      "properties": {
-        "dd": {
-          "type": "string",
-          "default": "hh"
-        }
+        "parameters": [],
+        "operationId": "postPet"
       }
     }
   }
