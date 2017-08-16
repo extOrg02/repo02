@@ -1,0 +1,91 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1",
+    "title": "spec222",
+    "x-lastModified": "Aug 16, 2017 14:40PM PST"
+  },
+  "paths": {
+    "/test": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response"
+          }
+        },
+        "parameters": [
+          {
+            "name": "fadsfdsafads",
+            "in": "query",
+            "description": "",
+            "required": false,
+            "type": "string",
+            "format": ""
+          },
+          {
+            "name": "dasfdasfasdfasdf",
+            "in": "query",
+            "description": "",
+            "required": true,
+            "type": "string",
+            "format": "",
+            "default": "fdasfa"
+          },
+          {
+            "name": "wewe",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "type": "string",
+            "format": ""
+          }
+        ],
+        "operationId": "getTest",
+        "summary": "dsfa",
+        "description": "dsafffdsf"
+      },
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response"
+          },
+          "fdasf": {
+            "description": "fdsafdsafdasf",
+            "schema": {
+              "type": "string"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "asdfasdfdsaf",
+            "in": "query",
+            "description": "",
+            "required": true,
+            "type": "string",
+            "format": ""
+          },
+          {
+            "name": "dfasdfasdf",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "operationId": "postTest",
+        "consumes": []
+      }
+    }
+  }
+}
