@@ -1,0 +1,119 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1",
+    "title": "qwe",
+    "x-lastModified": "Mar 06, 2018 13:39PM PST"
+  },
+  "paths": {
+    "/get": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response"
+          }
+        },
+        "parameters": [
+          {
+            "name": "w",
+            "in": "query",
+            "description": "",
+            "required": false,
+            "type": "string",
+            "format": "",
+            "default": "w"
+          },
+          {
+            "name": "ww",
+            "in": "query",
+            "description": "ww",
+            "required": false,
+            "type": "string",
+            "format": "byte",
+            "default": "ww"
+          },
+          {
+            "name": "www",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "type": "string",
+            "format": "",
+            "default": "ww"
+          }
+        ],
+        "operationId": "getGetfff",
+        "summary": "ffffd",
+        "description": "fffff",
+        "tags": [
+          "t1"
+        ]
+      },
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response"
+          }
+        },
+        "parameters": [],
+        "operationId": "postGet"
+      },
+      "put": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response"
+          }
+        },
+        "parameters": [],
+        "operationId": "putGet"
+      },
+      "delete": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response"
+          }
+        },
+        "parameters": [],
+        "operationId": "deleteGet"
+      },
+      "patch": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response"
+          }
+        },
+        "parameters": [],
+        "operationId": "patchGet"
+      }
+    },
+    "/rr": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response"
+          }
+        },
+        "parameters": [],
+        "operationId": "postRr"
+      }
+    }
+  }
+}
