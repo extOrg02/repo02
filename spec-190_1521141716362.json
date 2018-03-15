@@ -1,0 +1,77 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1",
+    "title": "spec-190",
+    "x-lastModified": "Mar 15, 2018 12:21PM PST"
+  },
+  "paths": {
+    "/book": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response"
+          }
+        },
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "description": "",
+            "required": false,
+            "type": "string",
+            "format": "",
+            "default": "q"
+          },
+          {
+            "name": "h",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "type": "string",
+            "format": "",
+            "default": "h"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/GiveNewSchemaNameHere"
+            }
+          }
+        ],
+        "operationId": "postBook",
+        "consumes": [
+          "application/json"
+        ]
+      },
+      "put": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response"
+          }
+        },
+        "parameters": [],
+        "operationId": "putBook"
+      }
+    }
+  },
+  "definitions": {
+    "GiveNewSchemaNameHere": {
+      "type": "object",
+      "properties": {
+        "A": {
+          "type": "string",
+          "default": "B"
+        }
+      }
+    }
+  }
+}
