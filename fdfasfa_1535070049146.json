@@ -1,0 +1,141 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "434123",
+    "title": "fdfasfa",
+    "x-lastModified": "Dec 21, 2017 16:26PM PST"
+  },
+  "paths": {
+    "/req/rqwer/{qweew}/fda": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response",
+            "schema": {
+              "$ref": "#/definitions/fasfdasfd"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "fadsfa",
+            "in": "query",
+            "description": "",
+            "required": false,
+            "type": "string",
+            "format": ""
+          },
+          {
+            "name": "fadsfasdf",
+            "in": "header",
+            "description": "fdsaf",
+            "required": false,
+            "type": "string",
+            "format": ""
+          },
+          {
+            "name": "qweew",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string",
+            "format": ""
+          }
+        ],
+        "operationId": "getReqRqwer_qweew_Fda"
+      },
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response"
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string",
+            "format": "",
+            "name": "qweew"
+          }
+        ],
+        "operationId": "postReqRqwer_qweew_Fda"
+      },
+      "put": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response"
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string",
+            "format": "",
+            "name": "qweew"
+          }
+        ],
+        "operationId": "putReqRqwer_qweew_Fda"
+      },
+      "delete": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response"
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string",
+            "format": "",
+            "name": "qweew"
+          }
+        ],
+        "operationId": "deleteReqRqwer_qweew_Fda"
+      },
+      "patch": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response"
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string",
+            "format": "",
+            "name": "qweew"
+          }
+        ],
+        "operationId": "patchReqRqwer_qweew_Fda"
+      }
+    }
+  },
+  "definitions": {
+    "fasfdasfd": {
+      "fasdfa": "dsaf"
+    }
+  }
+}
